@@ -1,4 +1,10 @@
+body {
+    width: 800px;
+    margin: auto;
+}
+
 .crystalImage {
     width: 200px;
     height: auto;
 }
+

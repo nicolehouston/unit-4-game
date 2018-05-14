@@ -8,10 +8,18 @@ var totalScore = 0;
 // Define functions
 function displayNumber() {
     document.getElementById("score").innerHTML = totalScore;
-};
+}
 
 function getRandInt(min, max){
     return Math.floor(Math.random()*(max - min + 1)) + min;
+}
+
+function displayWins() {
+    document.getElementById("wins").innerHTML = "Wins: " + wins;
+}
+
+function displayLosses() {
+
 }
 
 // Function that resets everything at the start of each round.
@@ -25,7 +33,7 @@ function startRound(){
     $("#gem3").attr("gemValue", gemValues[2]);
     $("#gem4").attr("gemValue", gemValues[3]);
     document.getElementById("randomNumber").innerHTML = computerPick;
-    document.getElementById("wins").innerHTML = "Wins: " + wins;
+    displayWins();
     document.getElementById("losses").innerHTML = "Losses: " + losses;
     totalScore = 0;
     displayNumber();
@@ -40,5 +48,14 @@ $("#crystals").on("click", ".crystalImage", function() {
     totalScore += parseInt($(this).attr("gemValue"));
     displayNumber();
 
-    
+    if(totalScore === computerPick) {
+        wins ++;
+        displayWins();
+        startRound();
+    }
+
+    else if(totalScore > computerPick){
+        losses ++;
+        startRound();
+    }
 });
