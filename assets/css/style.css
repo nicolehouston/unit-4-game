@@ -1,10 +1,87 @@
+html {
+    background-color: #528193;
+}
+
 body {
     width: 800px;
     margin: auto;
+    background-color:#e1eaf2;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 45px;
+    font-family: 'VT323', monospace;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
 }
 
 .crystalImage {
-    width: 200px;
+    width: 150px;
     height: auto;
 }
 
+.instructions {
+    width: 90%;
+    margin: auto;
+    line-height: 1.5;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.winLoss {
+    padding-top: 10px;
+    background-color: white;
+    font-size: 20px;
+    background-color: #f9c18e;
+    color: #295c70;
+    font-weight: bold;
+}
+
+.recordKeeping {
+    width: 90%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+#randomNumber {
+    background-color: white;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f9c18e;
+    margin-left: -15px;
+    color: #295c70;
+    font-weight: bold;
+}
+
+#crystals {
+   width: 90%;
+   margin: auto;
+   margin-top: 20px;
+}
+
+.totalScore {
+    background-color: white;
+    width: 25%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    border: 1px solid black;
+}
